@@ -8,3 +8,6 @@ This project is for practicing Git, GitHub and data analytics.
 - SQL analysis
 - Python analysis
 - Data projects
+
+## Status
+Learning Git step by step.
