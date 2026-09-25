@@ -15,3 +15,5 @@ Learning Git step by step.
 
 testttttttttttttttttttttt
 
+conflict
+
