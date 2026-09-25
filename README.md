@@ -15,5 +15,5 @@ Learning Git step by step.
 
 testttttttttttttttttttttt
 
-conflict
+Conflict line: Original
 
