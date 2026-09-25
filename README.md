@@ -1,6 +1,6 @@
 # Analytics Git Project
 
-This project is for practicing Git, GitHub and data analytics.
+This project is for practicing Git, GitHub and data analytics  conflict.
 
 ## Goals
 
