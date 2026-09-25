@@ -1,4 +1,5 @@
 -- Sales analysis by product category
+-- Calculates total sales for each product category.
 
 SELECT
     product_category,
