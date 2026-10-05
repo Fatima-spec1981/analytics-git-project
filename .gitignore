@@ -1,0 +1,7 @@
+# Local data files
+data/raw/
+data/processed/
+
+# Python cache
+__pycache__/
+*.pyc
