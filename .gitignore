@@ -1,0 +1,17 @@
+# Local data files
+data/raw/
+data/processed/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# dbt
+dbt_ecommerce/target/
+dbt_ecommerce/logs/
+
+# dbt local profile
+profiles.yml
+
+# Project logs
+logs/

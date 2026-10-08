@@ -1,0 +1,37 @@
+version: 2
+
+models:
+  - name: dim_customer
+    description: "Customer dimension for ecommerce analytics."
+
+    columns:
+      - name: customer_id
+        description: "Unique identifier for each customer."
+        data_tests:
+          - not_null
+          - unique
+
+      - name: first_name
+        description: "Customer first name."
+        data_tests:
+          - not_null
+
+      - name: last_name
+        description: "Customer last name."
+        data_tests:
+          - not_null
+
+      - name: country
+        description: "Customer country."
+        data_tests:
+          - not_null
+
+      - name: city
+        description: "Customer city."
+        data_tests:
+          - not_null
+
+      - name: signup_date
+        description: "Date when the customer signed up."
+        data_tests:
+          - not_null

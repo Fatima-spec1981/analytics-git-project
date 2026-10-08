@@ -1,0 +1,50 @@
+version: 2
+
+models:
+  - name: fct_sales
+    description: "Fact table containing ecommerce sales at order item grain."
+
+    columns:
+      - name: order_item_id
+        description: "Unique identifier for each order item."
+        data_tests:
+          - not_null
+          - unique
+
+      - name: order_id
+        description: "Identifier of the order."
+        data_tests:
+          - not_null
+
+      - name: customer_id
+        description: "Identifier of the customer."
+        data_tests:
+          - not_null
+          - relationships:
+              arguments:
+                to: ref('dim_customer')
+                field: customer_id
+
+      - name: product_id
+        description: "Identifier of the product."
+        data_tests:
+          - not_null
+          - relationships:
+              arguments:
+                to: ref('dim_product')
+                field: product_id
+
+      - name: gross_sales
+        description: "Gross sales before discount."
+        data_tests:
+          - not_null
+
+      - name: discount_amount
+        description: "Discount amount applied to the gross sales."
+        data_tests:
+          - not_null
+
+      - name: net_sales
+        description: "Net sales based on the source line amount."
+        data_tests:
+          - not_null

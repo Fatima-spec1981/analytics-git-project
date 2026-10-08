@@ -1,0 +1,42 @@
+version: 2
+
+models:
+  - name: dim_product
+    description: "Product dimension for ecommerce analytics."
+
+    columns:
+      - name: product_id
+        description: "Unique identifier for each product."
+        data_tests:
+          - not_null
+          - unique
+
+      - name: product_name
+        description: "Product name."
+        data_tests:
+          - not_null
+
+      - name: category
+        description: "Product category."
+        data_tests:
+          - not_null
+
+      - name: subcategory
+        description: "Product subcategory."
+        data_tests:
+          - not_null
+
+      - name: unit_cost
+        description: "Product unit cost."
+        data_tests:
+          - not_null
+
+      - name: unit_price
+        description: "Product selling price."
+        data_tests:
+          - not_null
+
+      - name: stock_status
+        description: "Current stock status."
+        data_tests:
+          - not_null

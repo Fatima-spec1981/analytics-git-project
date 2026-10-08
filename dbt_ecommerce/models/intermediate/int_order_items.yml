@@ -1,0 +1,22 @@
+version: 2
+
+models:
+  - name: int_order_items
+    description: "Intermediate model combining order items with order information."
+
+    columns:
+      - name: order_item_id
+        description: "Unique identifier for each order item."
+        data_tests:
+          - not_null
+          - unique
+
+      - name: order_id
+        description: "Identifier of the associated order."
+        data_tests:
+          - not_null
+
+      - name: customer_id
+        description: "Identifier of the customer who placed the order."
+        data_tests:
+          - not_null

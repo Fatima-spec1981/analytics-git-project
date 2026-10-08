@@ -8,10 +8,11 @@ This project is for practicing Git, GitHub and data analytics.
 * SQL analysis
 * Python analysis
 * Data projects
+* Azure data engineering
+* E-commerce analytics
 
 ## Status
 
-Learning Git step by step.
+Building an end-to-end e-commerce data platform step by step.
 
-testttttttttttttttttttttt
-
+Conflict practice completed successfully.
