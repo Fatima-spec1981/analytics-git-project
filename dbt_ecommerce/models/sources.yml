@@ -2,9 +2,19 @@ version: 2
 
 sources:
   - name: ecommerce
+    description: "Source tables for the ecommerce analytics platform stored in Azure SQL."
+
     schema: dbo
+
     tables:
       - name: customers
+        description: "Customer master data including identity, location, and signup information."
+
       - name: orders
+        description: "Order-level transactional data including status, channel, payment method, and order total."
+
       - name: order_items
+        description: "Line-item level details for each ecommerce order."
+
       - name: products
+        description: "Product master data including category, pricing, cost, and stock status."
