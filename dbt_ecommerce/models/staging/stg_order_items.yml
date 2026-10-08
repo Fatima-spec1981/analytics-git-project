@@ -1,0 +1,21 @@
+version: 2
+
+models:
+  - name: stg_order_items
+    description: "Staging model for ecommerce order items."
+
+    columns:
+      - name: order_item_id
+        description: "Unique identifier for each order item."
+        data_tests:
+          - not_null
+          - unique
+
+      - name: order_id
+        description: "Identifier of the order associated with the order item."
+        data_tests:
+          - not_null
+          - relationships:
+              arguments:
+                to: ref('stg_orders')
+                field: order_id

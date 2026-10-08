@@ -1,0 +1,12 @@
+version: 2
+
+models:
+  - name: stg_orders
+    description: "Staging model for ecommerce orders."
+
+    columns:
+      - name: order_id
+        description: "Unique identifier for each order."
+        data_tests:
+          - not_null
+          - unique
