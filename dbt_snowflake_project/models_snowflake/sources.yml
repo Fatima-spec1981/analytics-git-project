@@ -1,0 +1,13 @@
+version: 2
+
+sources:
+  - name: ecommerce_snowflake
+    description: "Raw ecommerce tables loaded into Snowflake."
+    database: ECOMMERCE_DB
+    schema: RAW
+    tables:
+      - name: CUSTOMERS_RAW
+      - name: ORDERS_RAW
+      - name: ORDER_ITEMS_RAW
+      - name: PRODUCTS_RAW
+      - name: PAYMENTS_RAW

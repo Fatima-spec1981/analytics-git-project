@@ -1,0 +1,15 @@
+version: 2
+
+models:
+  - name: stg_order_items
+    columns:
+      - name: ITEM_ID
+        data_tests:
+          - unique
+          - not_null
+      - name: ORDER_ID
+        data_tests:
+          - not_null
+      - name: PRODUCT_ID
+        data_tests:
+          - not_null

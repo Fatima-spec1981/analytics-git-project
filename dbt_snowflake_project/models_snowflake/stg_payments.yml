@@ -1,0 +1,12 @@
+version: 2
+
+models:
+  - name: stg_payments
+    columns:
+      - name: PAYMENT_ID
+        data_tests:
+          - unique
+          - not_null
+      - name: ORDER_ID
+        data_tests:
+          - not_null

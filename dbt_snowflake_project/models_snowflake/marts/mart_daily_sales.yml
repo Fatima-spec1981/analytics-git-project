@@ -1,0 +1,14 @@
+version: 2
+
+models:
+  - name: mart_daily_sales
+    columns:
+      - name: ORDER_DATE
+        data_tests:
+          - not_null
+      - name: TOTAL_ORDERS
+        data_tests:
+          - not_null
+      - name: TOTAL_REVENUE
+        data_tests:
+          - not_null

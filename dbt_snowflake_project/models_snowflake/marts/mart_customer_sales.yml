@@ -1,0 +1,14 @@
+version: 2
+
+models:
+  - name: mart_customer_sales
+    columns:
+      - name: CUSTOMER_ID
+        data_tests:
+          - not_null
+      - name: TOTAL_ORDERS
+        data_tests:
+          - not_null
+      - name: TOTAL_SPENT
+        data_tests:
+          - not_null
